@@ -24,7 +24,7 @@ public class WordCountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        FileInputFormat.setInputPaths(job, new Path("E:\\dfs\\input"));
+        FileInputFormat.setInputPaths(job, new Path("E:\\dfs\\input"));//comment by xieyi
         FileOutputFormat.setOutputPath(job, new Path("E:\\dfs\\outputWc"));
 
         boolean b = job.waitForCompletion(true);
